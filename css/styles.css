@@ -43,6 +43,8 @@ ul {
 
 .img {
     display: block;
+    min-width: 100%;
+    height: auto;
 }
 
 .section {
@@ -129,6 +131,8 @@ ul {
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--blue);
+    display: flex;
+    align-items: center;
 }
 
 .contacts-item {
@@ -137,7 +141,7 @@ ul {
 
 .contacts-icon {
     margin-right: 10px;
-    fill: currentColor;
+    fill: current Color;
 }
 
 .nav-list {
@@ -179,10 +183,13 @@ ul {
 
     background-repeat: no-repeat;
     background-position: center;
-    block-size: cover;
+    background-size: cover;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .motto {
@@ -237,9 +244,18 @@ ul {
 }
 
 .feature-icon {
-    margin-top: 25px;
+    /* margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 100px;
+    margin-left: 100px; */
+}
+
+.icon {
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .feature-desc {
@@ -277,8 +293,18 @@ ul {
 
 .team-item+.team-item {
     margin-left: 30px;
-    margin-bottom: 16px;
 }
+
+.team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+background: #FFFFFF;
+/* material shadow v1 */
+
 
 .team-section {
     background-color: var(--team-color-background);
@@ -312,6 +338,7 @@ ul {
 }
 
 .social-media-list {
+    margin-top: 16px;
     display: flex;
     justify-content: center;
 }
@@ -323,11 +350,11 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
     color: var(--backstage);
 }
 
-.social-media-link:hover {
+.social-media-link:hover,
+:focus {
     background-color: var(--blue);
     color: var(--white);
 }
@@ -351,33 +378,38 @@ ul {
 }
 
 .client-list {
-    display: flex; 
+    display: flex;
 }
 
-.client-item + .client-item {
+.client-item+.client-item {
     margin-left: 30px;
-    margin-bottom: 16px;
 }
 
 .client-item {
     width: 170px;
     height: 92px;
-    border: 1px solid #afb1b8;
+    /* border: 1px solid ;
     box-sizing: border-box;
-    border-radius: 4px;
+     */
 }
 
 .client-link {
     color: var(--backstage);
+    width: 100%;
+    height: 100%;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .client-icon {
-    margin-top: 16px;
-    margin-left: 32px;
     fill: currentColor;
 }
 
-.client-link:hover {
+.client-link:hover,
+:focus {
     color: var(--blue);
 }
 
@@ -400,22 +432,38 @@ ul {
     text-align: center;
 }
 
+
 .direction-button-item:not(:last-child) {
     margin-right: 8px;
+}
 
+.direction-button-item :hover,
+:focus {
+    background: #F5F4FA;
+    fill: currentColor;
+    box-shadow: inset 0 0 0 3px #757575;
+    border: none;
+    padding-right: ;
+    padding-left: ;
 }
 
 .direction-item {
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
-.direction-item:hover {
+.direction-item {
+    background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+}
+
+.direction-link:hover,
+:focus {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .direction-filter-button:focus,
@@ -456,6 +504,9 @@ ul {
 
 .direct-container {
     padding: 20px 24px;
+    border-left: 24px;
+    border-right: 24px;
+    border-bottom: 20px;
 }
 
 /*FOOTER*/
@@ -541,15 +592,13 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
     color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-media-link-footer {
-    background-color: var(--pic-title-after);
-}
 
-.social-media-link-footer:hover {
+.social-media-link-footer:hover,
+:focus {
     background-color: var(--blue);
     color: var(--white);
 }
