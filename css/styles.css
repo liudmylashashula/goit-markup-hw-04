@@ -126,13 +126,13 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--pic-title-after);
+    display: flex;
+    align-items: center;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--blue);
-    display: flex;
-    align-items: center;
 }
 
 .contacts-item {
@@ -141,7 +141,7 @@ ul {
 
 .contacts-icon {
     margin-right: 10px;
-    fill: current Color;
+    fill: currentColor;
 }
 
 .nav-list {
@@ -256,6 +256,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3 0px;
 }
 
 .feature-desc {
@@ -421,6 +422,7 @@ background: #FFFFFF;
 }
 
 .direction-filter-button {
+    padding: 6px 22px;
     border: none;
     font-size: 16px;
     font-weight: 500;
@@ -459,7 +461,7 @@ background: #FFFFFF;
 }
 
 .direction-link:hover,
-:focus {
+.direction-link:focus {
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -598,7 +600,7 @@ background: #FFFFFF;
 
 
 .social-media-link-footer:hover,
-:focus {
+.social-media-link-footer:focus {
     background-color: var(--blue);
     color: var(--white);
 }
