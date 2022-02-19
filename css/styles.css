@@ -243,13 +243,7 @@ ul {
     margin-right: 30px;
 }
 
-.feature-icon {
-    /* margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 100px; */
-}
-
-.icon {
+.feature-div {
     height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
@@ -292,20 +286,17 @@ ul {
     display: flex;
 }
 
-.team-item+.team-item {
+.team-item + .team-item {
     margin-left: 30px;
 }
 
 .team-item {
+    background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-
-background: #FFFFFF;
-/* material shadow v1 */
-
 
 .team-section {
     background-color: var(--team-color-background);
@@ -340,6 +331,7 @@ background: #FFFFFF;
 
 .social-media-list {
     margin-top: 16px;
+    margin-bottom: 16px;
     display: flex;
     justify-content: center;
 }
@@ -355,7 +347,7 @@ background: #FFFFFF;
 }
 
 .social-media-link:hover,
-:focus {
+.social-media-link:focus {
     background-color: var(--blue);
     color: var(--white);
 }
@@ -364,7 +356,7 @@ background: #FFFFFF;
     fill: currentColor;
 }
 
-.social-media-item+.social-media-item {
+.social-media-item + .social-media-item {
     margin-left: 10px;
 }
 
@@ -410,7 +402,7 @@ background: #FFFFFF;
 }
 
 .client-link:hover,
-:focus {
+.client-link:focus {
     color: var(--blue);
 }
 
@@ -434,13 +426,12 @@ background: #FFFFFF;
     text-align: center;
 }
 
-
 .direction-button-item:not(:last-child) {
     margin-right: 8px;
 }
 
 .direction-button-item :hover,
-:focus {
+.direction-button-item:focus {
     background: #F5F4FA;
     fill: currentColor;
     box-shadow: inset 0 0 0 3px #757575;
